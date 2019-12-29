@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>FCC Survey Form</title>
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Coding Survey</h1>
+      <p id="description">
+        Thank you for filling in our survery about your coding preferences!
+      </p>
+      <form action="" id="survey-form">
+        <div class="formgroup">
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            required
+            class="form-input"
+          />
+        </div>
+        <div class="formgroup">
+          <label id="email-label" for="email">Email</label>
+          <input
+            required
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Enter your email address"
+            class="form-input"
+          />
+        </div>
+        <div class="formgroup">
+          <label for="age" id="number-label">Age (Optional)</label>
+          <input
+            id="number"
+            type="number"
+            name="age"
+            min="1"
+            max="100"
+            placeholder="Enter your age"
+            class="form-input"
+          />
+        </div>
+
+        <div class="formgroup">
+          <label for="dropdown">How often do you want your emails?</label>
+          <select name="dropdown" id="dropdown" class="form-input">
+            <option value="select" selected disabled></option>
+            <option value="onceAWeek">Once a week</option>
+            <option value="everySecondWeek">Every second week</option>
+            <option value="OnceAMonth">Once a month</option>
+          </select>
+        </div>
+
+        <div class="formgroup">
+          <p>Do you prefer Back End or Front End?</p>
+          <label for="no">
+            <input type="radio" name="back-front" value="no" class="form-tick"/>Back End
+          </label>
+
+          <label for="no">
+            <input type="radio" name="back-front" value="no" class="form-tick"/>Front End
+          </label>
+        </div>
+
+        <div class="formgroup">
+          <p>What are your favourite languagues?</p>
+          <label for="javascript">
+            <input
+              type="checkbox"
+              name="javascript"
+              value="javascript"
+            />JavaScript
+          </label>
+
+          <label for="python">
+            <input type="checkbox" name="python" value="python" />Python
+          </label>
+
+          <label for="java">
+            <input type="checkbox" name="java" value="java" />Java
+          </label>
+
+          <label for="Php">
+            <input type="checkbox" name="php" value="php" />Php
+          </label>
+
+          <label for="html">
+            <input type="checkbox" name="html" value="html" />HTML
+          </label>
+
+          <label for="css">
+            <input type="checkbox" name="css" value="css" />CSS
+          </label>
+        </div>
+
+        <div class="formgroup">
+          <p>Do you have any comments before submitting?</p>
+          <textarea
+            class="form-input"
+            placeholder="Enter your comment here..."
+            maxlength="200"
+            name="comment"
+            form="survey-form"
+          ></textarea>
+        </div>
+        <div class="formgroup">
+          <button type="submit" id="submit" name="submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
